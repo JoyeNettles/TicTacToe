@@ -85,4 +85,13 @@ public class TicTacToeBoardTests {
         assertThat(ticTacToeBoard.getBoardMarks()[1][2], is(true));
     }
 
+    @Test
+    public void shouldPrintBoardWithXFormattedCorrectly(){
+//        ticTacToeBoard.getBoardMarks()[0][1] = true;
+//        ticTacToeBoard.getBoardMarks()[1][1] = true;
+//
+//        ticTacToeBoard.displayBoard();
+//        verify(printStream).println();
+    }
+
 }

@@ -54,12 +54,12 @@
       <file leaf-file-name="TicTacToeBoard.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/TicTacToeBoard.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5341615">
-              <caret line="57" column="8" selection-start-line="57" selection-start-column="8" selection-end-line="57" selection-end-column="8" />
+            <state vertical-scroll-proportion="0.65217394">
+              <caret line="25" column="12" selection-start-line="25" selection-start-column="12" selection-end-line="25" selection-end-column="12" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1687#1688#0" expanded="true" />
-                <element signature="e#1720#1721#0" expanded="true" />
+                <element signature="e#1940#1941#0" expanded="true" />
+                <element signature="e#1973#1974#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -69,7 +69,7 @@
         <entry file="file://$PROJECT_DIR$/src/test/java/TicTacToeBoardTests.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="76" column="0" selection-start-line="76" selection-start-column="0" selection-end-line="76" selection-end-column="0" />
+              <caret line="69" column="5" selection-start-line="69" selection-start-column="5" selection-end-line="69" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="docComment;class#TicTacToeBoardTests#0" expanded="false" />
@@ -78,11 +78,21 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="TicTacToeGame.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/TicTacToeGame.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="26" column="38" selection-start-line="26" selection-start-column="38" selection-end-line="26" selection-end-column="38" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="16" column="33" selection-start-line="16" selection-start-column="33" selection-end-line="16" selection-end-column="33" />
+              <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -357,11 +367,11 @@
         <option value="$PROJECT_DIR$/src/main/java/RuntimeIOException.java" />
         <option value="$PROJECT_DIR$/src/main/java/UserInputHandler.java" />
         <option value="$PROJECT_DIR$/src/test/java/UserInputHandlerTests.java" />
-        <option value="$PROJECT_DIR$/src/main/java/TicTacToeGame.java" />
         <option value="$PROJECT_DIR$/src/test/java/TicTacToeGameTests.java" />
         <option value="$PROJECT_DIR$/src/main/java/Spot.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Main.java" />
         <option value="$PROJECT_DIR$/src/test/java/TicTacToeBoardTests.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Main.java" />
+        <option value="$PROJECT_DIR$/src/main/java/TicTacToeGame.java" />
         <option value="$PROJECT_DIR$/src/main/java/TicTacToeBoard.java" />
       </list>
     </option>
@@ -494,7 +504,7 @@
     <property name="external.system.task.project.file.to.start" value="$PROJECT_DIR$/build.gradle" />
     <property name="restartRequiresConfirmation" value="true" />
   </component>
-  <component name="RunManager" selected="JUnit.All in tictactoe">
+  <component name="RunManager" selected="Application.Play!">
     <configuration default="false" name="UserInputHandlerTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="tictactoe" />
@@ -504,27 +514,6 @@
       <option name="MAIN_CLASS_NAME" value="UserInputHandlerTests" />
       <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
-    <configuration default="false" name="TicTacToeBoardTests.shouldPrintAnXOnTheBoardWhenANumberBetweenOneAndNineIsEntered" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="tictactoe" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="TicTacToeBoardTests" />
-      <option name="METHOD_NAME" value="shouldPrintAnXOnTheBoardWhenANumberBetweenOneAndNineIsEntered" />
-      <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
@@ -588,6 +577,27 @@
       <option name="MAIN_CLASS_NAME" />
       <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="package" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="TicTacToeBoardTests.shouldPrintBoardWithXFormattedCorrectly" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="tictactoe" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TicTacToeBoardTests" />
+      <option name="METHOD_NAME" value="shouldPrintBoardWithXFormattedCorrectly" />
+      <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
@@ -893,18 +903,18 @@
       <item index="0" class="java.lang.String" itemvalue="Application.Play!" />
       <item index="1" class="java.lang.String" itemvalue="Gradle.Unnamed" />
       <item index="2" class="java.lang.String" itemvalue="JUnit.UserInputHandlerTests" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.TicTacToeBoardTests.shouldPrintAnXOnTheBoardWhenANumberBetweenOneAndNineIsEntered" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.TicTacToeBoardTests" />
-      <item index="5" class="java.lang.String" itemvalue="JUnit.UserInputHandlerTests.shouldRetrievePlayerInputAfterPromptingForMove" />
-      <item index="6" class="java.lang.String" itemvalue="JUnit.All in tictactoe" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.TicTacToeBoardTests" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.UserInputHandlerTests.shouldRetrievePlayerInputAfterPromptingForMove" />
+      <item index="5" class="java.lang.String" itemvalue="JUnit.All in tictactoe" />
+      <item index="6" class="java.lang.String" itemvalue="JUnit.TicTacToeBoardTests.shouldPrintBoardWithXFormattedCorrectly" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.All in tictactoe" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.TicTacToeBoardTests" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.UserInputHandlerTests.shouldRetrievePlayerInputAfterPromptingForMove" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.UserInputHandlerTests" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.TicTacToeBoardTests.shouldPrintAnXOnTheBoardWhenANumberBetweenOneAndNineIsEntered" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.TicTacToeBoardTests.shouldPrintBoardWithXFormattedCorrectly" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.All in tictactoe" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.TicTacToeBoardTests" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.UserInputHandlerTests.shouldRetrievePlayerInputAfterPromptingForMove" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.UserInputHandlerTests" />
       </list>
     </recent_temporary>
   </component>
@@ -919,16 +929,16 @@
       <option name="number" value="Default" />
       <updated>1434651545112</updated>
       <workItem from="1434651546392" duration="67000" />
-      <workItem from="1434651955900" duration="12837000" />
+      <workItem from="1434651955900" duration="13611000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12904000" />
+    <option name="totallyTimeSpent" value="13678000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1" y="28" width="1434" height="773" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -950,7 +960,7 @@
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21059972" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24965133" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2684659" sideWeight="0.86122733" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2684659" sideWeight="0.86122733" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1053,14 +1063,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/TicTacToeGame.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="25" column="37" selection-start-line="25" selection-start-column="37" selection-end-line="25" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/TicTacToeGameTests.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.5652174">
@@ -1074,7 +1076,15 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="16" column="33" selection-start-line="16" selection-start-column="33" selection-end-line="16" selection-end-column="33" />
+          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/TicTacToeGame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="26" column="38" selection-start-line="26" selection-start-column="38" selection-end-line="26" selection-end-column="38" />
           <folding />
         </state>
       </provider>
@@ -1082,7 +1092,7 @@
     <entry file="file://$PROJECT_DIR$/src/test/java/TicTacToeBoardTests.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="76" column="0" selection-start-line="76" selection-start-column="0" selection-end-line="76" selection-end-column="0" />
+          <caret line="69" column="5" selection-start-line="69" selection-start-column="5" selection-end-line="69" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="docComment;class#TicTacToeBoardTests#0" expanded="false" />
@@ -1092,12 +1102,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/TicTacToeBoard.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5341615">
-          <caret line="57" column="8" selection-start-line="57" selection-start-column="8" selection-end-line="57" selection-end-column="8" />
+        <state vertical-scroll-proportion="0.65217394">
+          <caret line="25" column="12" selection-start-line="25" selection-start-column="12" selection-end-line="25" selection-end-column="12" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1687#1688#0" expanded="true" />
-            <element signature="e#1720#1721#0" expanded="true" />
+            <element signature="e#1940#1941#0" expanded="true" />
+            <element signature="e#1973#1974#0" expanded="true" />
           </folding>
         </state>
       </provider>

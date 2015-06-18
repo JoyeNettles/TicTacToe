@@ -17,20 +17,21 @@ public class TicTacToeBoard {
     }
 
     public void displayBoard(){
-//       int count = 0;
-//        for(int i=0; i<boardMarks.length; i++){
-//            if(boardMarks[i]){
-//                printStream.print("X ");
-//            }else{
-//                printStream.print("  ");
-//            }
-//
-//            if(count == 3){
-//                printStream.print("\n");
-//                count = 0;
-//            }
-//            count++;
-//        }
+
+        for(int row = 0; row<3; row++){
+            for(int column = 0; column<3; column++){
+                if(boardMarks[row][column]){
+                printStream.print(" X");
+                }else{
+                    printStream.print("  ");
+                }
+            }
+            printStream.println();
+            if (row != 2) {
+                printStream.println("------");
+
+            }
+        }
 
     }
 
@@ -44,10 +45,19 @@ public class TicTacToeBoard {
     }
 
     public void markBoard(int userInput) {
-        int row = 0;
-        int column = 0;
 
-        if(userInput%3 == 0){ // handles divisible by 3
+        int[] positions = calculateBoardPlacement(userInput);
+
+        boardMarks[positions[0]][positions[1]] = true;
+
+//        printStream.println("X");
+     }
+
+    private int[] calculateBoardPlacement(int userInput){
+        int[] positions = new int[2];
+        int row, column;
+
+        if(userInput%3 == 0){
             row = (userInput/3) -1;
             column = 2;
         } else if(userInput <3){
@@ -59,11 +69,12 @@ public class TicTacToeBoard {
             row = userInput / 3;
             column= (userInput % 3) ;
         }
-        boardMarks[row][column] = true;
 
-        printStream.println("X");
-     }
+        positions[0] = row;
+        positions[1] = column;
 
+        return positions;
+    }
 
     public boolean[][] getBoardMarks() {
         return boardMarks;

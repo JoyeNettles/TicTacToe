@@ -6,15 +6,14 @@ import java.io.InputStreamReader;
 public class Main {
 
     public static void main(String[] args) {
-//        InputStreamReader in = new InputStreamReader(System.in);
-//        TicTacToeBufferedReader ticTacToeBufferedReader = new TicTacToeBufferedReader(in);
-//        UserInputHandler userInputHandler = new UserInputHandler(System.out, ticTacToeBufferedReader);
-//        TicTacToeBoard ticTacToeBoard = new TicTacToeBoard(System.out, userInputHandler);
-//        TicTacToeGame ticTacToeGame = new TicTacToeGame(System.out, ticTacToeBoard, userInputHandler);
-//        ticTacToeGame.setUp();
-//        ticTacToeGame.playGame();
-        System.out.println(3%3==0);
-        System.out.println(3/3 -1);
+        InputStreamReader in = new InputStreamReader(System.in);
+        TicTacToeBufferedReader ticTacToeBufferedReader = new TicTacToeBufferedReader(in);
+        UserInputHandler userInputHandler = new UserInputHandler(System.out, ticTacToeBufferedReader);
+        TicTacToeBoard ticTacToeBoard = new TicTacToeBoard(System.out, userInputHandler);
+        TicTacToeGame ticTacToeGame = new TicTacToeGame(System.out, ticTacToeBoard, userInputHandler);
+        ticTacToeGame.setUp();
+        ticTacToeGame.playGame();
+
 
     }
 }

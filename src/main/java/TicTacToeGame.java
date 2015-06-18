@@ -24,6 +24,7 @@ public class TicTacToeGame {
         int userInput = userInputHandler.promptForMove();
         int count = 0;
         ticTacToeBoard.markBoard(userInput);
+        ticTacToeBoard.displayBoard();
     }
 
 }
