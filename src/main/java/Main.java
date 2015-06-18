@@ -10,7 +10,10 @@ public class Main {
         TicTacToeBufferedReader ticTacToeBufferedReader = new TicTacToeBufferedReader(in);
         UserInputHandler userInputHandler = new UserInputHandler(System.out, ticTacToeBufferedReader);
         TicTacToeBoard ticTacToeBoard = new TicTacToeBoard(System.out, userInputHandler);
-        TicTacToeGame ticTacToeGame = new TicTacToeGame(System.out, ticTacToeBoard);
+        TicTacToeGame ticTacToeGame = new TicTacToeGame(System.out, ticTacToeBoard, userInputHandler);
         ticTacToeGame.setUp();
+        ticTacToeGame.playGame();
+
+
     }
 }

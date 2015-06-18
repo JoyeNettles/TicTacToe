@@ -13,18 +13,20 @@ public class TicTacToeGameTests {
     private PrintStream printStream;
     private TicTacToeGame game;
     private TicTacToeBoard ticTacToeBoard;
+    private UserInputHandler userInputHandler;
 
     @Before
     public void setUp(){
         printStream = mock(PrintStream.class);
         ticTacToeBoard = mock(TicTacToeBoard.class);
-        game = new TicTacToeGame(printStream, ticTacToeBoard);
+        userInputHandler = mock(UserInputHandler.class);
+        game = new TicTacToeGame(printStream, ticTacToeBoard, userInputHandler);
     }
 
     @Test
-    public void shouldCallDrawBoardWhenGameStarts() {
+    public void shouldDrawEmptyBoardWhenGameStarts() {
         game.setUp();
-        verify(ticTacToeBoard).displayBoard();
+        verify(ticTacToeBoard).displayEmptyBoard();
     }
 
 

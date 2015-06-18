@@ -3,7 +3,8 @@ import org.junit.Test;
 
 import java.io.PrintStream;
 
-import static org.hamcrest.MatcherAssert.assertThat;
+import static org.hamcrest.core.Is.is;
+import static org.junit.Assert.assertThat;
 import static org.mockito.Mockito.*;
 
 
@@ -25,23 +26,31 @@ public class TicTacToeBoardTests {
         ticTacToeBoard = new TicTacToeBoard(printStream, userInputHandler);
     }
 
-
     @Test
-    public void shouldDrawBoardWhenGameStarts(){
-        ticTacToeBoard.displayBoard();
-        verify(printStream).println("  |  |  " +
-                "\n" + "---------" +
-                "\n" + "  |  |  " +
-                "\n" + "---------" +
-                "\n" + "  |  |  ");
+    public void shouldDrawEmptyBoard(){
+        ticTacToeBoard.displayEmptyBoard();
+        verify(printStream).println(" | | " +
+                "\n" + "------" +
+                "\n" + " | | " +
+                "\n" + "------" +
+                "\n" + " | | ");
     }
 
         @Test
-    public void shouldPrintAnXOnTheBoardWhenANumberBetweenOneAndNineIsEntered(){
+    public void shouldPrintAnXWhenAPositionIsReceived(){
         when(userInputHandler.readInput()).thenReturn(1);
         int userInput = userInputHandler.readInput();
         ticTacToeBoard.markBoard(userInput);
             verify(printStream).println("X");
+    }
+
+    @Test
+    public void shouldStoreUserInputInBoardArray(){
+        when(userInputHandler.readInput()).thenReturn(5);
+        int userInput = userInputHandler.readInput();
+        ticTacToeBoard.markBoard(userInput);
+        printStream.println("Desired: " + ticTacToeBoard.getBoardMarks()[1][1]);
+        assertThat(ticTacToeBoard.getBoardMarks()[1][1], is(true));
     }
 
 }

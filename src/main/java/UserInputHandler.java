@@ -13,24 +13,24 @@ public class UserInputHandler {
         this.bufferedReader = ticTacToeBufferedReader;
     }
 
-    public void promptForMove() {
+    public int promptForMove() {
+
         printStream.print("Please enter a number between 1 and 9: \t");
+        int userInput = readInput();
+        return userInput;
     }
 
     public int readInput(){
-        printStream.print("Enter an option: ");
         int input;
 
         try {
             input = Integer.parseInt(bufferedReader.readLine());
 
             if(input < 1 || input > 9){
-//                input = -1;
-//                printStream.println("Select a valid option!");
+                input = -1;
             }
         } catch (NumberFormatException numFormatException) {
             input = -1;
-            printStream.println("Select a valid option!");
         }
 
         return input;
