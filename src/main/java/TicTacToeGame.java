@@ -13,8 +13,12 @@ public class TicTacToeGame {
         this.ticTacToeBoard = ticTacToeBoard;
     }
 
-    public void start() {
+    public void setUp() {
         ticTacToeBoard.displayBoard();
+    }
+
+    public void playGame(){
+
     }
 
 }

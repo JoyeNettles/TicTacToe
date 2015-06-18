@@ -21,11 +21,11 @@ public class TicTacToeGameTests {
         game = new TicTacToeGame(printStream, ticTacToeBoard);
     }
 
-
     @Test
     public void shouldCallDrawBoardWhenGameStarts() {
-        game.start();
+        game.setUp();
         verify(ticTacToeBoard).displayBoard();
     }
+
 
     }
