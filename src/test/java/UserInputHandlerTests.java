@@ -32,9 +32,4 @@ public class UserInputHandlerTests {
         verify(printStream).print("Please enter a number between 1 and 9: \t");
     }
 
-//    @Test
-//    public void shouldPrintOnTheBoardWhenANumberBetweenOneAndNineIsEntered(){
-//        when(userInputHandler.readInput()).thenReturn(1);
-//
-//    }
 }

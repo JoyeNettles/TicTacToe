@@ -7,7 +7,7 @@ public class TicTacToeBoard {
 
     private PrintStream printStream;
 
-    public TicTacToeBoard(PrintStream printStream){
+    public TicTacToeBoard(PrintStream printStream, UserInputHandler userInputHandler){
         this.printStream = printStream;
     }
 
@@ -19,4 +19,7 @@ public class TicTacToeBoard {
                 "\n" + "  |  |  ");
     }
 
+    public void markBoard(int userInput) {
+        printStream.println("X");
+    }
 }

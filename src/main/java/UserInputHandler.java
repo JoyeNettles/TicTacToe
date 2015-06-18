@@ -24,10 +24,10 @@ public class UserInputHandler {
         try {
             input = Integer.parseInt(bufferedReader.readLine());
 
-//            if(!validOptionsList.contains(input)){
+            if(input < 1 || input > 9){
 //                input = -1;
 //                printStream.println("Select a valid option!");
-//            }
+            }
         } catch (NumberFormatException numFormatException) {
             input = -1;
             printStream.println("Select a valid option!");

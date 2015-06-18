@@ -3,6 +3,7 @@ import org.junit.Test;
 
 import java.io.PrintStream;
 
+import static org.hamcrest.MatcherAssert.assertThat;
 import static org.mockito.Mockito.*;
 
 
@@ -14,12 +15,14 @@ public class TicTacToeBoardTests {
     private PrintStream printStream;
     private TicTacToeGame game;
     private TicTacToeBoard ticTacToeBoard;
+    private UserInputHandler userInputHandler;
 
     @Before
     public void setUp(){
         printStream = mock(PrintStream.class);
         game = mock(TicTacToeGame.class);
-        ticTacToeBoard = new TicTacToeBoard(printStream);
+        userInputHandler = mock(UserInputHandler.class);
+        ticTacToeBoard = new TicTacToeBoard(printStream, userInputHandler);
     }
 
 
@@ -31,6 +34,14 @@ public class TicTacToeBoardTests {
                 "\n" + "  |  |  " +
                 "\n" + "---------" +
                 "\n" + "  |  |  ");
+    }
+
+        @Test
+    public void shouldPrintAnXOnTheBoardWhenANumberBetweenOneAndNineIsEntered(){
+        when(userInputHandler.readInput()).thenReturn(1);
+        int userInput = userInputHandler.readInput();
+        ticTacToeBoard.markBoard(userInput);
+            verify(printStream).println("X");
     }
 
 }
