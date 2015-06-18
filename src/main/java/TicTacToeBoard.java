@@ -44,10 +44,22 @@ public class TicTacToeBoard {
     }
 
     public void markBoard(int userInput) {
-        int ROW = userInput / 3;
-        int COLUMN = (userInput % 3) -1;
-        boardMarks[ROW][COLUMN] = true;
-        printStream.println("Actual: " + boardMarks[ROW][COLUMN]);
+        int row = 0;
+        int column = 0;
+
+        if(userInput%3 == 0){ // handles divisible by 3
+            row = (userInput/3) -1;
+            column = 2;
+        } else if(userInput <3){
+            userInput--;
+            row = 0;
+            column = userInput -1;
+        } else{
+            userInput--;
+            row = userInput / 3;
+            column= (userInput % 3) ;
+        }
+        boardMarks[row][column] = true;
 
         printStream.println("X");
      }

@@ -36,21 +36,53 @@ public class TicTacToeBoardTests {
                 "\n" + " | | ");
     }
 
-        @Test
-    public void shouldPrintAnXWhenAPositionIsReceived(){
-        when(userInputHandler.readInput()).thenReturn(1);
-        int userInput = userInputHandler.readInput();
-        ticTacToeBoard.markBoard(userInput);
-            verify(printStream).println("X");
-    }
+//        @Test
+//    public void shouldPrintAnXWhenAPositionIsReceived(){
+//        when(userInputHandler.readInput()).thenReturn(1);
+//        int userInput = userInputHandler.readInput();
+//        ticTacToeBoard.markBoard(userInput);
+//            verify(printStream).println("X");
+//    }
 
     @Test
-    public void shouldStoreUserInputInBoardArray(){
+    public void shouldStoreUserInputInFirstRowLastColumnOfBoardArray(){
+        when(userInputHandler.readInput()).thenReturn(3);
+        int userInput = userInputHandler.readInput();
+        ticTacToeBoard.markBoard(userInput);
+        assertThat(ticTacToeBoard.getBoardMarks()[0][2], is(true));
+    }
+//
+//    @Test
+//    public void shouldStoreUserInputInFirstRowOfBoardArray(){
+//        when(userInputHandler.readInput()).thenReturn(23);
+//        int userInput = userInputHandler.readInput();
+//        ticTacToeBoard.markBoard(userInput);
+//        printStream.println("Desired: " + ticTacToeBoard.getBoardMarks()[1][1]);
+//        assertThat(ticTacToeBoard.getBoardMarks()[0][1], is(true));
+//    }
+
+    @Test
+    public void shouldStoreUserInputInSecondRowOfBoardArrayWhenInputIsNotDivisibleByThree(){
         when(userInputHandler.readInput()).thenReturn(5);
         int userInput = userInputHandler.readInput();
         ticTacToeBoard.markBoard(userInput);
-        printStream.println("Desired: " + ticTacToeBoard.getBoardMarks()[1][1]);
         assertThat(ticTacToeBoard.getBoardMarks()[1][1], is(true));
+    }
+
+    @Test
+    public void shouldStoreUserInputInThirdRowOfBoardArrayWhenInputIsNotDivisibleByThree(){
+        when(userInputHandler.readInput()).thenReturn(8);
+        int userInput = userInputHandler.readInput();
+        ticTacToeBoard.markBoard(userInput);
+        assertThat(ticTacToeBoard.getBoardMarks()[2][1], is(true));
+    }
+
+    @Test
+    public void shouldStoreUserInputInBoardArrayWhenInputIsDivisibleByThree(){
+        when(userInputHandler.readInput()).thenReturn(6);
+        int userInput = userInputHandler.readInput();
+        ticTacToeBoard.markBoard(userInput);
+        assertThat(ticTacToeBoard.getBoardMarks()[1][2], is(true));
     }
 
 }
