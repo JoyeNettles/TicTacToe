@@ -9,9 +9,9 @@ import java.io.PrintStream;
 public class Player {
     private PrintStream printStream;
     private TicTacToeBoard ticTacToeBoard;
-    private BufferedReader reader;
+    private GameBufferedReader reader;
 
-    public Player(PrintStream printStream, TicTacToeBoard ticTacToeBoard, BufferedReader reader) {
+    public Player(PrintStream printStream, TicTacToeBoard ticTacToeBoard, GameBufferedReader reader) {
         this.printStream = printStream;
         this.ticTacToeBoard = ticTacToeBoard;
         this.reader = reader;
@@ -19,12 +19,8 @@ public class Player {
 
     public void move() {
         printStream.println("Player 1, enter a number between 1 and 9: \t");
-        int input = 0;
-        try {
-            input = Integer.parseInt(reader.readLine());
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+        int input = Integer.parseInt(reader.readLine());
+
         ticTacToeBoard.mark(input);
     }
 }

@@ -15,19 +15,19 @@ public class PlayerTests {
     private PrintStream printStream;
     private Player player;
     private TicTacToeBoard ticTacToeBoard;
-    private BufferedReader reader;
+    private GameBufferedReader reader;
 
     @Before
     public void setUp() throws Exception {
         printStream = mock(PrintStream.class);
         ticTacToeBoard = mock(TicTacToeBoard.class);
-        reader = mock(BufferedReader.class);
+        reader = mock(GameBufferedReader.class);
 
         player = new Player(printStream, ticTacToeBoard, reader);
     }
 
     @Test
-    public void shouldPromptPlayerToMakeAMove() throws IOException {
+    public void shouldPromptPlayerToMakeAMove()  {
         when(reader.readLine()).thenReturn("5");
         player.move();
 
@@ -35,14 +35,14 @@ public class PlayerTests {
     }
 
     @Test
-    public void shouldMarkBoardInPositionOneWhenUserEntersOne() throws IOException {
+    public void shouldMarkBoardInPositionOneWhenUserEntersOne() {
         when(reader.readLine()).thenReturn("1");
         player.move();
         verify(ticTacToeBoard).mark(1);
     }
 
     @Test
-    public void shouldMarkBoardInPositionFiveWhenUserEntersFive() throws IOException {
+    public void shouldMarkBoardInPositionFiveWhenUserEntersFive()  {
         when(reader.readLine()).thenReturn("5");
         player.move();
         verify(ticTacToeBoard).mark(5);
