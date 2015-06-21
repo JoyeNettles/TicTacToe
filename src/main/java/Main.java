@@ -1,3 +1,4 @@
+import java.io.BufferedReader;
 import java.io.InputStreamReader;
 
 /**
@@ -6,6 +7,11 @@ import java.io.InputStreamReader;
 public class Main {
 
     public static void main(String[] args) {
-        new TicTacToeBoard(System.out).draw();
+        TicTacToeBoard ticTacToeBoard = new TicTacToeBoard(System.out);
+        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+        Player player = new Player(System.out, ticTacToeBoard, reader);
+
+        ticTacToeBoard.draw();
+        player.move();
     }
 }

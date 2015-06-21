@@ -19,4 +19,8 @@ public class TicTacToeBoard {
                         "--------\n" +
                         "  |  | \n");
     }
+
+    public void mark(int position) {
+
+    }
 }
