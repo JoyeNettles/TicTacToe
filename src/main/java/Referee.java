@@ -14,7 +14,7 @@ public class Referee {
 
 
     public String requestMove() {
-        int availableSpots = 7;
+        int availableSpots = ticTacToeBoard.availableSpots();
         if(availableSpots % 2 == 1){
             player1.move();
         }else{

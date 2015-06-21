@@ -51,10 +51,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Referee.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Referee.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/Referee.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
+            <state vertical-scroll-proportion="0.6707317">
               <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
               <folding />
             </state>
@@ -65,7 +65,7 @@
         <entry file="file://$PROJECT_DIR$/src/test/java/RefereeTests.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="29" column="21" selection-start-line="29" selection-start-column="21" selection-end-line="29" selection-end-column="21" />
+              <caret line="38" column="0" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -73,14 +73,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TicTacToeBoard.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="TicTacToeBoard.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/TicTacToeBoard.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.78066915">
-              <caret line="33" column="16" selection-start-line="33" selection-start-column="16" selection-end-line="33" selection-end-column="16" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="34" column="16" selection-start-line="34" selection-start-column="16" selection-end-line="34" selection-end-column="16" />
               <folding>
-                <element signature="e#1008#1009#0" expanded="true" />
-                <element signature="e#1032#1033#0" expanded="true" />
+                <element signature="e#1057#1058#0" expanded="true" />
+                <element signature="e#1094#1095#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -366,8 +366,8 @@
         <option value="$PROJECT_DIR$/src/main/java/Main.java" />
         <option value="$PROJECT_DIR$/src/test/java/GameTests.java" />
         <option value="$PROJECT_DIR$/src/test/java/RefereeTests.java" />
-        <option value="$PROJECT_DIR$/src/main/java/TicTacToeBoard.java" />
         <option value="$PROJECT_DIR$/src/main/java/Referee.java" />
+        <option value="$PROJECT_DIR$/src/main/java/TicTacToeBoard.java" />
       </list>
     </option>
   </component>
@@ -505,7 +505,7 @@
       <recent name="Player" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.RefereeTests.shouldAskPlayerOneForAMoveWhenItsAnOddNumberOfSpotsRemaining">
+  <component name="RunManager" selected="JUnit.RefereeTests.shouldAskPlayerTwoForAMoveWhenItsAnEvenNumberOfSpotsRemaining">
     <configuration default="false" name="All in tictactoe (2)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="tictactoe" />
@@ -515,27 +515,6 @@
       <option name="MAIN_CLASS_NAME" />
       <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="package" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
-    <configuration default="false" name="PlayerTests.shouldIndicateWhichPlayersTurnItIsInPromptForMove" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="tictactoe" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="PlayerTests" />
-      <option name="METHOD_NAME" value="shouldIndicateWhichPlayersTurnItIsInPromptForMove" />
-      <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
@@ -598,6 +577,27 @@
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="RefereeTests" />
       <option name="METHOD_NAME" value="shouldAskPlayerOneForAMoveWhenItsAnOddNumberOfSpotsRemaining" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="RefereeTests.shouldAskPlayerTwoForAMoveWhenItsAnEvenNumberOfSpotsRemaining" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="tictactoe" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="RefereeTests" />
+      <option name="METHOD_NAME" value="shouldAskPlayerTwoForAMoveWhenItsAnEvenNumberOfSpotsRemaining" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -926,18 +926,18 @@
       <item index="1" class="java.lang.String" itemvalue="Application.Play!" />
       <item index="2" class="java.lang.String" itemvalue="Gradle.Unnamed" />
       <item index="3" class="java.lang.String" itemvalue="JUnit.All in tictactoe (2)" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.PlayerTests.shouldIndicateWhichPlayersTurnItIsInPromptForMove" />
-      <item index="5" class="java.lang.String" itemvalue="JUnit.TicTacToeBoardTests.shouldMarkBoardWithAnOWhenItIsPlayerTwosTurn" />
-      <item index="6" class="java.lang.String" itemvalue="JUnit.GameTests.shouldPromptPlayerOneToMoveWhenGameStarts" />
-      <item index="7" class="java.lang.String" itemvalue="JUnit.RefereeTests.shouldAskPlayerOneForAMoveWhenItsAnOddNumberOfSpotsRemaining" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.TicTacToeBoardTests.shouldMarkBoardWithAnOWhenItIsPlayerTwosTurn" />
+      <item index="5" class="java.lang.String" itemvalue="JUnit.GameTests.shouldPromptPlayerOneToMoveWhenGameStarts" />
+      <item index="6" class="java.lang.String" itemvalue="JUnit.RefereeTests.shouldAskPlayerOneForAMoveWhenItsAnOddNumberOfSpotsRemaining" />
+      <item index="7" class="java.lang.String" itemvalue="JUnit.RefereeTests.shouldAskPlayerTwoForAMoveWhenItsAnEvenNumberOfSpotsRemaining" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.RefereeTests.shouldAskPlayerOneForAMoveWhenItsAnOddNumberOfSpotsRemaining" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.All in tictactoe (2)" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.GameTests.shouldPromptPlayerOneToMoveWhenGameStarts" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.TicTacToeBoardTests.shouldMarkBoardWithAnOWhenItIsPlayerTwosTurn" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.PlayerTests.shouldIndicateWhichPlayersTurnItIsInPromptForMove" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.RefereeTests.shouldAskPlayerTwoForAMoveWhenItsAnEvenNumberOfSpotsRemaining" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.RefereeTests.shouldAskPlayerOneForAMoveWhenItsAnOddNumberOfSpotsRemaining" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.All in tictactoe (2)" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.GameTests.shouldPromptPlayerOneToMoveWhenGameStarts" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.TicTacToeBoardTests.shouldMarkBoardWithAnOWhenItIsPlayerTwosTurn" />
       </list>
     </recent_temporary>
   </component>
@@ -954,12 +954,12 @@
       <workItem from="1434651546392" duration="67000" />
       <workItem from="1434651955900" duration="13611000" />
       <workItem from="1434897489035" duration="434000" />
-      <workItem from="1434906532250" duration="13930000" />
+      <workItem from="1434906532250" duration="14146000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="28042000" />
+    <option name="totallyTimeSpent" value="28258000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="49" y="23" width="1386" height="797" extended-state="0" />
@@ -984,7 +984,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14862914" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21703297" sideWeight="0.86122733" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2802198" sideWeight="0.86122733" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24965133" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1147,10 +1147,21 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/TicTacToeBoard.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="34" column="16" selection-start-line="34" selection-start-column="16" selection-end-line="34" selection-end-column="16" />
+          <folding>
+            <element signature="e#1057#1058#0" expanded="true" />
+            <element signature="e#1094#1095#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/RefereeTests.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="29" column="21" selection-start-line="29" selection-start-column="21" selection-end-line="29" selection-end-column="21" />
+          <caret line="38" column="0" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1159,20 +1170,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Referee.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state vertical-scroll-proportion="0.6707317">
           <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/TicTacToeBoard.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.78066915">
-          <caret line="33" column="16" selection-start-line="33" selection-start-column="16" selection-end-line="33" selection-end-column="16" />
-          <folding>
-            <element signature="e#1008#1009#0" expanded="true" />
-            <element signature="e#1032#1033#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>

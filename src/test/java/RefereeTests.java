@@ -26,8 +26,15 @@ public class RefereeTests {
     @Test
     public void shouldAskPlayerOneForAMoveWhenItsAnOddNumberOfSpotsRemaining(){
         referee.requestMove();
-        when(ticTacToeBoard.calculateAvailableSpots()).thenReturn(7);
+        when(ticTacToeBoard.availableSpots()).thenReturn(7);
         verify(player1).move();
+    }
+
+  @Test
+    public void shouldAskPlayerTwoForAMoveWhenItsAnEvenNumberOfSpotsRemaining(){
+        referee.requestMove();
+        when(ticTacToeBoard.availableSpots()).thenReturn(2);
+        verify(player2).move();
     }
 
 }

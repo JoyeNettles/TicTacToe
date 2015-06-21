@@ -9,6 +9,7 @@ import java.util.List;
 public class TicTacToeBoard {
     private PrintStream printStream;
     private List<String> boardCells;
+    private int availableSpots;
 
     public TicTacToeBoard(PrintStream printStream, List<String> boardCells){
         this.printStream = printStream;
@@ -28,9 +29,10 @@ public class TicTacToeBoard {
 
     public void mark(int position) {
        boardCells.set(position-1, "X");
+        availableSpots--;
     }
 
-    public int calculateAvailableSpots() {
-        return 7;
+    public int availableSpots() {
+        return availableSpots;
     }
 }
