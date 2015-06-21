@@ -14,4 +14,17 @@ import static org.mockito.Mockito.*;
 public class TicTacToeBoardTests {
 
 
+    @Test
+    public void shouldDrawABoard(){
+        PrintStream printStream = mock(PrintStream.class);
+        new TicTacToeBoard(printStream).draw();
+
+        verify(printStream).println(
+                "  |  | \n" +
+                "--------\n" +
+                "  |  | \n" +
+                "--------\n" +
+                "  |  | \n");
+    }
+
 }
