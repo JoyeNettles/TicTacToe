@@ -12,22 +12,20 @@ import static org.mockito.Mockito.*;
 public class GameTests {
 
     private TicTacToeBoard ticTacToeBoard;
-    private BufferedReader reader;
     private Player player;
     private Game game;
 
     @Before
     public void setUp(){
         ticTacToeBoard = mock(TicTacToeBoard.class);
-        reader = mock(BufferedReader.class);
         player = mock(Player.class);
-        game = new Game(ticTacToeBoard, reader, player);
+        game = new Game(ticTacToeBoard, player);
     }
 
     @Test
     public void shouldDrawBoardWhenGameStarts(){
         game.playGame();
-        verify(ticTacToeBoard).draw();
+        verify(ticTacToeBoard, times(2)).draw();
     }
 
     @Test

@@ -7,17 +7,17 @@ import java.io.InputStreamReader;
 public class Game {
 
     private final TicTacToeBoard ticTacToeBoard;
-    private final BufferedReader reader;
     private final Player player;
 
-    public Game(TicTacToeBoard ticTacToeBoard, BufferedReader reader, Player player) {
+    public Game(TicTacToeBoard ticTacToeBoard, Player player) {
         this.ticTacToeBoard = ticTacToeBoard;
-        this.reader = reader;
         this.player = player;
     }
 
     public void playGame(){
         ticTacToeBoard.draw();
         player.move();
+        ticTacToeBoard.draw();
+
     }
 }
