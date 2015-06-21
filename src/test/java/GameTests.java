@@ -12,14 +12,15 @@ import static org.mockito.Mockito.*;
 public class GameTests {
 
     private TicTacToeBoard ticTacToeBoard;
-    private Player player;
+    private Player player1, player2;
     private Game game;
 
     @Before
     public void setUp(){
         ticTacToeBoard = mock(TicTacToeBoard.class);
-        player = mock(Player.class);
-        game = new Game(ticTacToeBoard, player);
+        player1 = mock(Player.class);
+        player2 = mock(Player.class);
+        game = new Game(ticTacToeBoard, player1, player2);
     }
 
     @Test
@@ -29,8 +30,10 @@ public class GameTests {
     }
 
     @Test
-    public void shouldPromptPlayerToMoveWhenGameStarts(){
+    public void shouldPromptPlayerOneToMoveWhenGameStarts(){
         game.playGame();
-        verify(player).move();
+        verify(player1).move();
     }
+
+
 }

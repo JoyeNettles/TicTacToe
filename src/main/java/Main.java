@@ -1,6 +1,4 @@
-import java.io.BufferedReader;
 import java.io.InputStreamReader;
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
@@ -13,9 +11,10 @@ public class Main {
         List<String> boardCells = Arrays.asList(" ", " ", " ", " ", " ", " ", " ", " ", " ");
         TicTacToeBoard ticTacToeBoard = new TicTacToeBoard(System.out, boardCells);
         GameBufferedReader reader = new GameBufferedReader(new InputStreamReader(System.in));
-        Player player = new Player(System.out, ticTacToeBoard, reader);
+        Player player1 = new Player(System.out, ticTacToeBoard, reader);
+        Player player2 = new Player(System.out, ticTacToeBoard, reader);
 
-        Game game = new Game(ticTacToeBoard,  player);
+        Game game = new Game(ticTacToeBoard,  player1, player2);
         game.playGame();
     }
 }

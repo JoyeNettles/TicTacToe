@@ -1,8 +1,6 @@
 import org.junit.Before;
 import org.junit.Test;
 
-import java.io.BufferedReader;
-import java.io.IOException;
 import java.io.PrintStream;
 
 import static org.mockito.Mockito.*;
@@ -31,7 +29,7 @@ public class PlayerTests {
         when(reader.readLine()).thenReturn("5");
         player.move();
 
-        verify(printStream).println("Player 1, enter a number between 1 and 9: \t");
+        verify(printStream).println(contains("enter a number between 1 and 9: \t"));
     }
 
     @Test
@@ -47,4 +45,12 @@ public class PlayerTests {
         player.move();
         verify(ticTacToeBoard).mark(5);
     }
+
+    @Test
+    public void shouldNotCrashIfUserInputIsNotBetweenOneAndNine(){
+        when(reader.readLine()).thenReturn("89").thenReturn("-8").thenReturn("15").thenReturn("5");
+        player.move();
+        verify(ticTacToeBoard).mark(5);
+    }
+
 }

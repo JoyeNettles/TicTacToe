@@ -2,7 +2,6 @@ import org.junit.Before;
 import org.junit.Test;
 
 import java.io.PrintStream;
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
@@ -41,7 +40,7 @@ public class TicTacToeBoardTests {
     }
 
     @Test
-    public void shouldIndicateMarkedCellOnBoardWhenCellIsMarked(){
+    public void shouldDrawMarkedCellOnBoardWhenCellIsMarked(){
         int position = 3;
         ticTacToeBoard.mark(position);
 
@@ -61,5 +60,7 @@ public class TicTacToeBoardTests {
                 "--------\n" +
                 " 7| 8 | 9 \n");
     }
+
+
 
 }

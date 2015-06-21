@@ -7,8 +7,8 @@ import java.util.List;
  * Created by jnettles on 6/18/15.
  */
 public class TicTacToeBoard {
-    PrintStream printStream;
-    List<String> boardCells;
+    private PrintStream printStream;
+    private List<String> boardCells;
 
     public TicTacToeBoard(PrintStream printStream, List<String> boardCells){
         this.printStream = printStream;
@@ -28,5 +28,9 @@ public class TicTacToeBoard {
 
     public void mark(int position) {
        boardCells.set(position-1, "X");
+    }
+
+    public int calculateAvailableSpots() {
+        return 7;
     }
 }

@@ -1,6 +1,3 @@
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
 import java.io.PrintStream;
 
 /**
@@ -18,8 +15,11 @@ public class Player {
     }
 
     public void move() {
-        printStream.println("Player 1, enter a number between 1 and 9: \t");
-        int input = Integer.parseInt(reader.readLine());
+        int input = 0;
+        do{
+            printStream.println("Player 1, enter a number between 1 and 9: \t");
+            input = Integer.parseInt(reader.readLine());
+        }while((input < 1) || (input > 9));
 
         ticTacToeBoard.mark(input);
     }
